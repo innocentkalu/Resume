@@ -69,10 +69,6 @@ class Person
 
 end
 
-@person = Person.new
+# @person = Person.new
 
-# p @person
-# p @person.education
-# p @person.skills
-# p @person.contact
-# p @person.summary
+

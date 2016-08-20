@@ -2,28 +2,30 @@ require_relative 'person'
 require 'json'
 require 'pry'
 
-class Resume
+class Resume < Sinatra::Base
 
-  attr_reader :resumedata
-
-  def initialize(person)
+  get '/display' do
+    @person = Person.new
     @resumedata = {}
-
-    @resumedata[:name] = person.name
-    @resumedata[:summary] = person.summary
-    @resumedata[:projects] = person.projects
-    @resumedata[:employment] = person.employment
-    @resumedata[:volunteering] = person.volunteering
-    @resumedata[:contact] = person.contact
-    @resumedata[:education] = person.education
-    @resumedata[:skills] = person.skills
-    @resumedata[:photourl] = person.photo
+    @resumedata[:Name] = @person.name
+    @resumedata[:Summary] = @person.summary
+    @resumedata[:Projects] = @person.projects
+    @resumedata[:Employment] = @person.employment
+    @resumedata[:Volunteering] = @person.volunteering
+    @resumedata[:Contact] = @person.contact
+    @resumedata[:Education] = @person.education
+    @resumedata[:Skills] = @person.skills
+    @resumedata[:Photourl] = @person.photo
+    @resume = @resumedata.to_json
+    erb :display
   end
 
+  get '/' do
+    erb :index
+  end
 end
 
-new_resume = Resume.new(@person)
 
-@new_resume_resumedata = new_resume.resumedata.to_json
-puts @new_resume_resumedata
+
+
 
