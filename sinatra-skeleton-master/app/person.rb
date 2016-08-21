@@ -57,9 +57,9 @@ class Person
 
   def skills
     value = {}
-    value[:programming] = "Ruby, Javascript, JQuery,HTML,CSS,Fortran,Basic"
-    value[:frameworks] = "Rails, Sinatra"
-    value[:database] = "SQL, Postgress"
+    value[:Programming] = "Ruby, Javascript, JQuery,HTML,CSS,Fortran,Basic"
+    value[:Frameworks] = "Rails, Sinatra"
+    value[:Database] = "SQL, Postgress"
     return value
   end
 
