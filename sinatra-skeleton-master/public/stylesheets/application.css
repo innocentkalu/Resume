@@ -22,7 +22,7 @@
 
 #contact {
   width: 24%;
-  height: 300px;
+  height: 250px;
   /*border: 1px solid;*/
   /*float: left;*/
   margin-left: 75%;
@@ -30,7 +30,7 @@
 
 #projects{
   width: 72%;
-  height: 600px;
+  height: 550px;
   /*border: 1px solid;*/
   float: left;
   clear: both;
@@ -39,7 +39,7 @@
 
 #education {
   width: 24%;
-  height: 300px;
+  height: 270px;
   /*border: 1px solid;*/
   /*float: left;*/
   margin-left: 75%;
@@ -47,7 +47,7 @@
 
 #employment {
   width: 72%;
-  height: 350px;
+  height: 330px;
   /*border: 1px solid;*/
   float: left;
   clear: both;
@@ -55,23 +55,40 @@
 
 #skills {
   width: 24%;
-  height: 350px;
+  height: 320px;
   /*border: 1px solid;*/
-  /*float: left;*/
   margin-left: 75%;
 }
 
 #volunteering {
   width: 72%;
-  height: 150px;
+  height: 140px;
   /*border: 1px solid;*/
   float: left;
   clear: both;
 }
 
+#photo {
+  width: 24%;
+  height: 200px;
+  /*border: 1px solid;*/
+  /*float: left;*/
+  margin-left: 75%;
+}
+
 #person_name {
   text-align: center;
   color:  #457bb5;
+  font-size: 50px;
+}
+
+#person_contact_text {
+  font-weight: bold;
+}
+
+#person_photo {
+  width: 200px;
+  height: 200px;
 }
 
 #section_heading {
@@ -79,5 +96,7 @@
 }
 
 hr {
-  size: 10px;
+  height: 4px;
+  border: none;
+  background-color:  #457bb5;
 }
