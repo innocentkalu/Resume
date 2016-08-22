@@ -47,10 +47,14 @@ $(document).ready(function() {
   // Inserting contact
   $("<h2>").attr("id","section_heading").text("Contact").appendTo("#contact");
   $("<hr>").attr("id","hr").appendTo("#contact");
-  contact.forEach(function(con){
-    // $("<h3>").attr("id","person_education_title").text(edu).appendTo("#education");
-    $("<p>").attr("id","person_contact_text").text(resumedata.Contact[con]).appendTo("#contact");
-  });
+  $("<a>").attr("id","person_contact_text").attr("class","person_contact_link").attr("href","mailto:"+resumedata.Contact.email).text(resumedata.Contact.email).appendTo("#contact");
+  $("<p>").attr("id","person_contact_text").text(resumedata.Contact.phone).appendTo("#contact");
+  $("<p>").attr("id","person_contact_text").text(resumedata.Contact.city).appendTo("#contact");
+  $("<a>").attr("id","person_contact_text").attr("class","person_contact_link").attr("href","https://www.linkedin.com/"+resumedata.Contact.LinkedIn).text(resumedata.Contact.LinkedIn).appendTo("#contact");
+  $("<br>").appendTo("#contact");
+  $("<br>").appendTo("#contact");
+  $("<a>").attr("id","person_contact_text").attr("class","person_contact_link").attr("href","https://github.com/"+resumedata.Contact.github).text(resumedata.Contact.github).appendTo("#contact");
+
   // Inserting education
   $("<h2>").attr("id","section_heading").text("Education").appendTo("#education");
   $("<hr>").attr("id","hr").appendTo("#education");

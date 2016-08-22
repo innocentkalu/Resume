@@ -84,7 +84,12 @@
 
 #person_contact_text {
   font-weight: bold;
+  text-decoration: none;
 }
+
+#person_contact_text.person_contact_link {
+    color: black;
+  }
 
 #person_photo {
   width: 200px;
