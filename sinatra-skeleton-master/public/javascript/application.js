@@ -35,7 +35,7 @@ $(document).ready(function() {
   $("<hr>").attr("id","hr").appendTo("#employment");
   employment.forEach(function(emp){
     if ((emp =="Company") || (emp =="Location") || (emp =="Title") || (emp =="Duration")) {
-      $("<h3>").attr("id","person_employment_text").text(resumedata.Employment[emp]).appendTo("#employment");
+      $("<h4>").attr("id","person_employment_text").text(resumedata.Employment[emp]).appendTo("#employment");
     } else if (emp =="Description") {
       $("<p>").attr("id","person_employment_text").text(resumedata.Employment[emp]).appendTo("#employment");
     }
@@ -43,7 +43,7 @@ $(document).ready(function() {
   // Inserting volunteering
   $("<h2>").attr("id","section_heading").text("Volunteering").appendTo("#volunteering");
   $("<hr>").attr("id","hr").appendTo("#volunteering");
-  $("<h3>").attr("id","person_volunteering_text").text(resumedata.Volunteering).appendTo("#volunteering");
+  $("<p>").attr("id","person_volunteering_text").text(resumedata.Volunteering).appendTo("#volunteering");
   // Inserting contact
   $("<h2>").attr("id","section_heading").text("Contact").appendTo("#contact");
   $("<hr>").attr("id","hr").appendTo("#contact");
