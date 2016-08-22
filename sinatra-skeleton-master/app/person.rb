@@ -66,9 +66,8 @@ class Person
   def photo
     "example.com"
   end
-
 end
 
-# @person = Person.new
+
 
 
